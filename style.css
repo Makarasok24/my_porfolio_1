@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navigation bar */
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    /* background-color: red; */
+    z-index: 11;
+    line-height: 80px;
+}
+.logo{
+    font-size: 40px;
+    display: flex;
+    font-weight: 700;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+b{
+    color: rgb(10, 10, 240);
+    bottom: 10px;
+}
+.nav_bar{
+    display: flex;
+}
+.nav_bar li{
+    list-style: none;
+    padding: 0 15px;
+}
+.nav_bar li a{
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    text-decoration: none;
+
+}
+.nav_bar li:hover a,.media a:hover{
+    color: #000;
+}
+.media a{
+    font-size: 30px;
+    margin: 20px 10px;
+    color: #000;
+}
+
+/* sec_02 */
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+.topLine{
+    display: block;
+    position: relative;
+    font-size: 40px;
+    letter-spacing: 3px;
+
+}
+.topLine::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 40px;
+    bottom: 10px;
+    background-color: red;
+}
+.position{
+    display: block;
+    font-size: 6rem;
+    font-weight: 900;
+    color: rgb(106, 22, 203);
+}
+.multiple_text{
+    color: rgb(39, 203, 39);
+    text-transform: capitalize;
+}
+p{
+    display: block;
+    width: 90%;
+    font-size: 1.1rem;
+}
+.btns{
+    width: 100%;
+    position: relative;
+    left: 90px;
+}
+.btns a{
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+    background-color: #000;
+    padding: 8px 14px;
+    margin: 20px 20px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    box-shadow: 0 15px 10px rgba(0,0, 0, 0.2);
+}
+.btns button:hover{
+    transition: 0.3s;
+    background-color: rgb(106, 22, 203);
+}
+.image_box,.img_about{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.image_box img{
+    position: relative;
+    height: 100%;
+    width: calc(70% - 80px);
+    left: 150px;
+    top:30px;
+    animation: animateUser 4s linear infinite;
+}
+@keyframes animateUser{
+    50%{
+        top:-40px;
+        left: 100px;
+    }
+}
+.image_box #bg_img{
+    position: absolute;
+    top: 60%;
+    right: 60%;
+    transform: translate(10%,-50%) rotate(25deg);
+    width: 70%;
+    filter: saturate(2);
+    animation: animateBg 4s linear infinite;
+    border-radius: 20px;
+}
+@keyframes animateBg{
+    50%{
+        top:30%;
+        right: 50%;
+    }
+}
+
+.txt{
+    width: 50%;
+    text-align: center;
+}
+/* ------------------------------- about me ------------------------ */
+#about_me{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.about_me{
+    background-color: aliceblue;
+    padding: 100px;
+}
+.img_about img{
+    height: 100%;
+    width: calc(100%);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    border: 8px solid rgb(106, 22, 203);
+    
+}
+.img_about img:hover{
+    transform:rotate(25deg);
+    transition: 0.5s;
+}
+
+.about_title{
+    position: relative;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: 40pt;
+    padding-left: 20px;
+}
+.role_title{
+    position: relative;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 25pt;
+    padding-left: 20px;
+}
+.description{
+    position: relative;
+    font-size: 14pt;
+    padding-left: 20px;
+    width: 100%;
+    text-align: justify;
+}
+.contact{
+    position: relative;
+    border-radius: 20px;
+    background-color: hotpink;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+.contact:hover{
+    background-color: rgb(246, 41, 143);
+}
+
+/* ---------------------------- skill ------------------------ */
+._skill{
+    font-size: 40pt;
+    font-weight: 800;
+}
+.skill_01{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+.skill_01:hover{
+    background-color: rgb(200, 222, 243);
+    transition: 0.8s;
+}
+.skill_icon i{
+    font-size: 40pt;
+    margin: 20px 0;
+}
+.skill_title h1{
+    font-weight: 800;
+    position: relative;
+}
+.skill_description{
+    font-size: 12pt;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 5px 40px;
+}
+/* ------------------------------ _achievement ----------------------- */
+
+.achievement{
+    padding: 50px;
+    background-color: aliceblue;
+}
+.card-img-top:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+}
+._achievement{
+    font-size: 40pt;
+    font-weight: 800;
+}
+
+/* ---------------- footer -------------- */
+.footer{
+    padding: 100px;
+    background-color: #121212;
+}
+.footer_ a{
+    text-decoration: none;
+    margin: 10px 5px;
+    color: #fff;
+}
+.flat_form i{
+    font-size: 25pt;
+    padding: 5px;
+    color: #fff;
+}
+.flat_form i:hover{
+    color: rgb(7, 125, 227);
+}
+.cp-right{
+    color: #fff;
+}
