@@ -8,7 +8,7 @@ var typingEffect = new Typed('.multiple_text',{
 })
 
 ScrollReveal({ 
-    reset: true,
+    reset: false,
     distance:'200px',
     duration: 2500,
     delay: 400 
