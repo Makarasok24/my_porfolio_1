@@ -41,4 +41,9 @@ ScrollReveal().reveal('.reveal-rotate',{delay:600,origin:'bottom',rotate:{x:100,
 var icon = document.getElementById('icon');
 icon.onclick = function(){
         document.body.classList.toggle('dark_mode');
+        if(document.body.classList.contains('dark_mode')){
+            icon.src="image/sun.png";
+        }else{
+            icon.src="image/moon.png";
+        }
     }
