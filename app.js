@@ -39,7 +39,7 @@ ScrollReveal().reveal('.reveal-rotate',{delay:600,origin:'bottom',rotate:{x:100,
 // -------------- dark mode -----------
 
 var icon = document.getElementById('icon');
-icon.onclick = function(){
+    icon.onclick = function(){
         document.body.classList.toggle('dark_mode');
         if(document.body.classList.contains('dark_mode')){
             icon.src="image/sun.png";
@@ -47,3 +47,20 @@ icon.onclick = function(){
             icon.src="image/moon.png";
         }
     }
+
+//--------------- go to top --------------
+let calcScrollValue = () => {
+    let scrollProgress = document.getElementById('progress');
+    let progressValue  = document.getElementById('progress-value');
+    let pos = document.documentElement.scrollTop;
+    if(pos > 100){
+        scrollProgress.style.display = 'grid';
+    }else{
+        scrollProgress.style.display = 'none';
+    }
+    scrollProgress.addEventListener('click', () => {
+        document.documentElement.scrollTop = 0;
+    });
+};
+window.onscroll = calcScrollValue;
+window.onload   = calcScrollValue;

@@ -23,6 +23,25 @@
     --menu-color:rgb(10, 10, 240);
   
 }
+/* ----------------- back to top --------------- */
+#progress{
+    background-color: rgb(106, 22, 203);
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    z-index: 11;
+    cursor: pointer;
+}
+#progress-value{
+    color: #fff;
+    font-size: 30pt;
+    font-weight: 800;
+}
 .sec_02{
     background-color: var(--primary-color);
 }
