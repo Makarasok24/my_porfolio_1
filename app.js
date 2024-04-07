@@ -35,3 +35,10 @@ ScrollReveal().reveal('.reveal-rotate',{delay:600,origin:'bottom',rotate:{x:100,
 // window.addEventListener('load', () => {
 //     revealFunction();
 // });
+
+// -------------- dark mode -----------
+
+var icon = document.getElementById('icon');
+icon.onclick = function(){
+        document.body.classList.toggle('dark_mode');
+    }
