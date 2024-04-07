@@ -13,12 +13,15 @@
     --secondary-color: #121212;
     --about_me: aliceblue;
     --skill-color: rgb(200, 222, 243);
+    --menu-color:#000;
 }
 .dark_mode{
     --primary-color: #121212;
     --secondary-color: #fff;
     --about_me: rgb(37, 39, 41);
     --skill-color: rgb(91, 91, 91);
+    --menu-color:rgb(10, 10, 240);
+  
 }
 .sec_02{
     background-color: var(--primary-color);
@@ -58,10 +61,10 @@ b{
     letter-spacing: 3px;
     text-transform: capitalize;
     text-decoration: none;
-
+    color: var(--menu-color);
 }
 .nav_bar li:hover a,.media a:hover{
-    color: #000;
+    color: var(--secondary-color);
 }
 .media a{
     font-size: 30px;
