@@ -51,7 +51,7 @@ var icon = document.getElementById('icon');
 //--------------- go to top --------------
 let calcScrollValue = () => {
     let scrollProgress = document.getElementById('progress');
-    let progressValue  = document.getElementById('progress-value');
+    //let progressValue  = document.getElementById('progress-value');
     let pos = document.documentElement.scrollTop;
     if(pos > 100){
         scrollProgress.style.display = 'grid';
