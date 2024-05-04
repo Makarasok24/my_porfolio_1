@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="bg-amber-500 min-h-[60px] flex items-center">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div class="logo">
+                <h4 class="text-white font-bold text-3xl">SMK<b class="text-red-500 text-4xl">.</b></h4>
+            </div>
+            <div class="nav-links md:static absolute md:min-h-fit bg-amber-500 left-[0] min-h-[30vh] top-[-100%]  w-full md:w-auto items-center flex px-5">
+                <ul class=" flex md:flex-row flex-col  md:items-center md:gap-[4vw] gap-5">
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">My Course</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">About Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <img class="h-[50px] cursor-pointer" src="image/moon.png" alt="" id="icon">
+                <button class="bg-[#a6c1ee] px-5 py-2 rounded-full text-white hover:bg-[#87acec]">Sign In</button>
+                <ion-icon onclick="menuToggle(this)" class="text-3xl cursor-pointer md:hidden" name="menu"></ion-icon>
+            </div>
+
+            <script>
+                const navLink = document.querySelector('.nav-links');
+                function menuToggle(e){
+                    //console.log(e.name);
+                    e.name = e.name === 'menu' ? 'close' : 'menu';
+                    navLink.classList.toggle('top-[9%]');
+                }
+
+                var icon = document.getElementById('icon');
+                icon.onclick = function(){
+                document.body.classList.toggle('dark_mode');
+                if(document.body.classList.contains('dark_mode')){
+                icon.src="image/sun.png";
+                }else{
+                    icon.src="image/moon.png";
+                }
+                }
+            </script>
+
+            
+        </nav>
+    </header>
+</body>
+</html>
+
