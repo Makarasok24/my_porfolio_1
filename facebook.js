@@ -6,4 +6,5 @@ function login(){
     let valuePass = password.value;
     console.log(value);
     console.log(valuePass);
+    
 }
